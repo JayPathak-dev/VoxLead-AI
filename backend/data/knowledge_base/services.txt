@@ -1,0 +1,25 @@
+[SAMPLE BUSINESS DATA - FICTIONAL COMPANY FOR DEMONSTRATION]
+
+VOXLEAD SOLUTIONS - CORE SERVICES
+=================================
+
+1. AI CHATBOT SERVICES (Omnichannel Web & WhatsApp Assistants)
+- Custom RAG-powered AI chatbots trained on your product catalogs, PDFs, FAQs, and policies.
+- Handles order tracking inquiries, return/refund policy questions, product recommendations, and troubleshooting.
+- Multilingual support in English and Hindi (Hinglish-friendly understanding).
+- Seamless handoff to human sales or support agents with full conversation summary.
+- Ideal for e-commerce stores, SaaS portals, EdTech, and service websites receiving 100 to 10,000+ daily queries.
+
+2. VOICE AUTOMATION (Autonomous AI Voice Sales & Booking Agents)
+- Browser and telephony-ready AI voice assistants capable of inbound qualification and outbound follow-ups.
+- Real-time Speech-to-Text (STT), contextual multi-turn dialogue, sentiment analysis, and Text-to-Speech (TTS).
+- Extracts caller name, company, business requirement, timeline, and budget automatically.
+- Checks real-time slot availability and books sales discovery calls or service appointments after explicit confirmation.
+- Generates structured post-call summaries for sales managers.
+
+3. CRM AUTOMATION & LEAD INTELLIGENCE
+- Automatic lead creation and enrichment directly from voice and chat transcripts.
+- Transparent rule-based lead scoring (0–100) evaluating requirement clarity, budget readiness, buying intent, business need, timeline, and engagement.
+- Sentiment classification (Positive, Neutral, Negative) with objection detection.
+- Automated follow-up task generation, pipeline status updates (New, Contacted, Qualified, Unqualified, Converted), and analytics dashboards.
+- Custom REST API connectors for existing CRM systems or standalone VoxLead CRM workspace.

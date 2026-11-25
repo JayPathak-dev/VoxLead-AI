@@ -1,0 +1,22 @@
+[SAMPLE BUSINESS DATA - FICTIONAL COMPANY FOR DEMONSTRATION]
+
+VOXLEAD SOLUTIONS - SUPPORT POLICIES & SLA
+==========================================
+
+1. Support Channels & Hours:
+- Email Support: support@voxlead-solutions.example.com (Monday–Saturday, 9:30 AM – 7:00 PM IST).
+- Dedicated Slack / Microsoft Teams channel for Growth and Enterprise clients.
+- Emergency outage escalation line for Enterprise plans.
+
+2. Response Time Commitments (Sample SLAs):
+- Starter Plan: Initial response within 1 business day (24 hours).
+- Growth Plan: Initial response within 4 business hours; priority bug fixes within 1 business day.
+- Enterprise Plan: 1-hour response SLA for critical issues; 99.9% service availability target for managed deployments.
+
+3. Knowledge Base Updates & Maintenance:
+- Clients can upload new PDF, DOCX, or TXT files anytime through the Knowledge Base portal and trigger instant vector re-indexing.
+- Monthly prompt tuning and lead-scoring threshold review included in Growth and Enterprise plans.
+
+4. Data Privacy & Retention Policy:
+- Customer conversation transcripts and lead records belong strictly to the client organization.
+- Role-based access, encrypted transport (TLS in production), and configurable data retention windows are standard for production deployments.

@@ -1,0 +1,182 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FAFAF7;
+  --surface: #FFFFFF;
+  --primary: #16865A;
+  --primary-hover: #126E4A;
+  --primary-light: #DDF2E7;
+  --text-primary: #202923;
+  --text-secondary: #78847D;
+  --border: #E7ECE7;
+  --sidebar: #F3F6F1;
+  --success: #16A34A;
+  --warning: #D97706;
+  --danger: #DC2626;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Accessible focus ring (modern-web-guidance: accessibility) */
+:where(a:any-link, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Visually hidden utility keeping content in accessibility tree */
+.visually-hidden:where(:not(:focus-within, :active)) {
+  position: absolute !important;
+  clip-path: inset(50%) !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  white-space: nowrap !important;
+}
+
+/* Native <dialog> modal scroll containment (modern-web-guidance: dialog) */
+dialog.vox-dialog {
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--text-primary);
+  max-width: min(94vw, 720px);
+  width: 100%;
+  max-height: 90vh;
+  box-shadow: 0 24px 48px -12px rgba(32, 41, 35, 0.18);
+}
+
+dialog.vox-dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+
+dialog.vox-dialog:modal {
+  overscroll-behavior: contain;
+}
+
+dialog.vox-dialog::backdrop {
+  background: rgba(32, 41, 35, 0.42);
+  backdrop-filter: blur(2px);
+  overflow: hidden;
+  overscroll-behavior: contain;
+}
+
+/* Responsive data table with sticky header & container-query card fallback (modern-web-guidance: responsive-table) */
+.vox-table-wrapper {
+  overflow: auto;
+  max-inline-size: 100%;
+  max-block-size: min(620px, 72vh);
+  container-type: inline-size;
+  border-radius: 12px;
+}
+
+.vox-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: left;
+}
+
+.vox-table thead {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 2;
+  background: #F7F9F6;
+}
+
+.vox-table th,
+.vox-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+@container (width < 680px) {
+  .vox-table--responsive,
+  .vox-table--responsive thead,
+  .vox-table--responsive tbody,
+  .vox-table--responsive tr,
+  .vox-table--responsive th,
+  .vox-table--responsive td {
+    display: block;
+  }
+
+  .vox-table--responsive thead {
+    display: none;
+  }
+
+  .vox-table--responsive tbody tr {
+    margin-block-end: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+    padding: 0.5rem 0.75rem;
+  }
+
+  .vox-table--responsive td {
+    border-bottom: 1px solid #F1F4F1;
+    padding: 0.45rem 0.25rem;
+  }
+
+  .vox-table--responsive td:last-child {
+    border-bottom: none;
+  }
+
+  .vox-table--responsive td[data-label]::before {
+    content: attr(data-label) ": ";
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 0.78rem;
+  }
+}
+
+/* Persistent toast popover (modern-web-guidance: persistent-toast-notifications) */
+.vox-toast-region {
+  position: fixed;
+  inset-block-end: 1.25rem;
+  inset-inline-end: 1.25rem;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  max-width: min(92vw, 380px);
+  pointer-events: none;
+}
+
+.vox-toast {
+  pointer-events: auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text-primary);
+  padding: 0.85rem 1rem;
+  box-shadow: 0 12px 28px -8px rgba(32, 41, 35, 0.16);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

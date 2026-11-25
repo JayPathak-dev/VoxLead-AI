@@ -1,0 +1,64 @@
+# Environment variables
+.env
+backend/.env
+frontend/.env
+*.env.local
+
+# Python virtual environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node & Frontend build artifacts
+frontend/node_modules/
+node_modules/
+frontend/dist/
+dist/
+*.local
+
+# SQLite runtime database files
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite3
+backend/data/*.db*
+*.tsbuildinfo
+
+# Uploaded user files & generated FAISS vector cache
+backend/data/uploads/*
+!backend/data/uploads/.gitkeep
+backend/data/faiss_index/*
+!backend/data/faiss_index/.gitkeep
+
+# Model weights & local HuggingFace / Ollama caches
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+models/
+.cache/
+huggingface_cache/
+
+# Logs & PIDs
+logs/
+*.log
+.pids/
+
+# OS & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo

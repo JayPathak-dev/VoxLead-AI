@@ -1,0 +1,23 @@
+flowchart TB
+    User(["Customer (Voice / Text)"]) -->|"Mic / Text Input"| FE["React + TypeScript + Tailwind UI<br/>(Browser SpeechRecognition & SpeechSynthesis)"]
+    FE -->|"REST JSON API<br/>http://localhost:8000/api/*"| BE["FastAPI + Uvicorn Backend<br/>(Python 3.11)"]
+
+    subgraph AI_Engine["Agentic Sales & RAG Engine"]
+        BE --> CM["Conversation Manager<br/>& Contextual Memory"]
+        CM --> RAG["RAG Engine<br/>(Chunking & Semantic Retrieval)"]
+        RAG --> ST["Sentence Transformers<br/>all-MiniLM-L6-v2"]
+        RAG --> FAISS[("FAISS CPU Vector Index<br/>(Persisted Locally)")]
+        CM --> LQ["Lead Extraction, Sentiment<br/>& 100-pt Scoring"]
+        CM --> AB["Appointment Booking Engine<br/>(Asia/Kolkata Overlap Guard)"]
+        CM --> SUM["Call Summary Generator"]
+    end
+
+    CM -->|"HTTP API<br/>http://localhost:11434/api/chat"| OLLAMA["Docker Container: voxlead-ollama<br/>(ollama/ollama:latest)"]
+    OLLAMA --> QWEN["Qwen 2.5 3B Instruct<br/>(qwen2.5:3b)"]
+    QWEN --- VOL[("Persistent Docker Volume<br/>voxlead_ollama_data")]
+
+    LQ --> DB[("SQLite CRM Database<br/>(SQLAlchemy ORM)")]
+    AB --> DB
+    SUM --> DB
+    CM --> DB
+    DB --> AN["Analytics & Executive Dashboard<br/>(Recharts)"]

@@ -1,0 +1,26 @@
+[SAMPLE BUSINESS DATA - FICTIONAL COMPANY FOR DEMONSTRATION]
+
+VOXLEAD SOLUTIONS - PRICING PLANS (INR / MONTHLY)
+=================================================
+
+All prices below are illustrative sample pricing in Indian Rupees (INR), excluding applicable GST (18%).
+
+1. Starter Plan – ₹19,999 / month
+- Best for: Early-stage businesses, clinics, and D2C brands getting started with automation.
+- Includes: 1 AI Chat or Voice Agent, up to 2,500 conversations/month, Knowledge Base RAG (up to 25 documents), Lead Capture & Basic CRM, Email Summary Reports.
+- Setup Fee: ₹15,000 one-time onboarding.
+
+2. Growth Plan – ₹44,999 / month (Most Popular)
+- Best for: Growing e-commerce, SaaS, and real estate teams automating sales & support.
+- Includes: AI Voice + Chat Agent (English & Hindi), up to 12,000 conversations/month, Knowledge Base RAG (up to 150 documents), Automated Lead Scoring & Sentiment Analysis, Appointment Booking Engine, Analytics Dashboard, Priority Support.
+- Setup Fee: ₹25,000 one-time onboarding & workflow customization.
+
+3. Enterprise Custom Plan – Starting at ₹95,000 / month
+- Best for: High-volume enterprises (500+ daily queries or multi-branch operations) requiring custom integrations or private/local LLM hosting.
+- Includes: Unlimited custom knowledge documents, dedicated LLM deployment options, custom CRM/ERP API integrations, SLA-backed uptime, dedicated AI solutions architect, custom voice & telephony connectors.
+- Setup Fee: Scoped per integration requirements.
+
+Optional Add-ons (Sample):
+- Custom WhatsApp Business API integration: ₹8,000 / month.
+- Dedicated on-premise / private cloud LLM setup consultation: Custom quote.
+- Annual billing discount: 15% off monthly subscription fees when billed annually.

@@ -1,0 +1,25 @@
+[SAMPLE BUSINESS DATA - FICTIONAL COMPANY FOR DEMONSTRATION]
+
+VOXLEAD SOLUTIONS - FREQUENTLY ASKED QUESTIONS (FAQ)
+====================================================
+
+Q1: How long does it take to deploy VoxLead AI for our business?
+A: Starter deployments typically go live in 5 to 7 business days. Growth deployments with custom RAG knowledge bases and CRM workflows take 2 to 3 weeks. Enterprise custom integrations take 4 to 6 weeks.
+
+Q2: Which languages does the AI agent support?
+A: VoxLead AI supports English and Hindi out of the box, including natural conversational queries in both languages. Additional regional languages can be scoped under Enterprise plans.
+
+Q3: Does VoxLead AI invent answers if a question is not in our documents?
+A: No. VoxLead AI uses Retrieval-Augmented Generation (RAG) grounded in your uploaded company documents. If requested information is unavailable in the knowledge base, the agent transparently informs the customer and offers to connect with a human specialist or book a discovery call.
+
+Q4: Can the AI book appointments directly into our calendar?
+A: In the current VoxLead AI workspace, appointments are validated against internal availability slots, checked for conflicts, confirmed explicitly with the customer, and stored in the VoxLead CRM database. External Google Calendar / Outlook sync is available via custom Enterprise API integrations.
+
+Q5: Can we run the AI without sending customer chats to paid third-party LLM APIs?
+A: Yes. VoxLead AI supports local open-weight LLM deployment via Ollama (such as Qwen 2.5 models) in containerized environments, avoiding per-token external LLM API fees.
+
+Q6: What happens if a customer has a negative experience or complex issue?
+A: Our sentiment analyzer flags negative sentiment and objections in real time, records them in the CRM summary, and recommends immediate human follow-up.
+
+Q7: Is there a free trial or live demo?
+A: Yes! We offer a 30-minute personalized discovery call and live sandbox walkthrough tailored to your business use case.

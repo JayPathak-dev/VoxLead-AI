@@ -1,0 +1,27 @@
+[SAMPLE BUSINESS DATA - FICTIONAL COMPANY FOR DEMONSTRATION]
+
+COMPANY PROFILE: VOXLEAD SOLUTIONS
+==================================
+Company Name: VoxLead Solutions Pvt. Ltd.
+Tagline: Autonomous AI Sales & Customer Automation for Modern Businesses
+Headquarters: Bengaluru, India (with remote delivery across India, APAC, and UAE)
+Website: https://voxlead-solutions.example.com
+Contact Email: hello@voxlead-solutions.example.com
+Sales Support Hours: Monday to Saturday, 9:30 AM – 7:00 PM IST (Asia/Kolkata)
+
+About VoxLead Solutions:
+VoxLead Solutions is an AI automation company specializing in conversational AI agents, voice-enabled sales assistants, RAG-powered customer support bots, and automated CRM workflows for small, mid-sized, and growing enterprises.
+
+Industries We Serve:
+1. E-commerce and D2C retail brands (order tracking, returns, product inquiries, cart recovery).
+2. SaaS and B2B technology companies (inbound lead qualification, product demos, onboarding).
+3. Healthcare clinics and diagnostics (appointment booking, patient FAQs, follow-ups).
+4. Real estate and property management (site visit scheduling, brochure inquiries, lead scoring).
+5. Financial services, EdTech, and coaching institutes (course/plan counseling, callback scheduling).
+
+Key Value Propositions:
+- 24/7 instant responses across voice and chat channels in English and Hindi.
+- Up to 65% reduction in manual Level-1 sales and support workload.
+- Transparent lead qualification and automated CRM data entry without manual copy-pasting.
+- Grounded answers backed by your actual company documents using Retrieval-Augmented Generation (RAG).
+- Privacy-conscious deployment options including local/on-premise LLM hosting.

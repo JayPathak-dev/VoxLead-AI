@@ -1,0 +1,25 @@
+# VoxLead AI - Local Ollama Docker Service
+# Runs Ollama in an isolated Linux container on Apple Silicon / x86_64 Macs
+# Model weights are persisted in the named Docker volume `ollama_data`
+# Backend connects via http://localhost:11434 while running natively on macOS.
+# If backend is later containerized in this compose file, use http://ollama:11434.
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: voxlead-ollama
+    ports:
+      - "${OLLAMA_HOST_PORT:-11434}:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 15s
+
+volumes:
+  ollama_data:
+    name: voxlead_ollama_data

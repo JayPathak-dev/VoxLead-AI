@@ -1,0 +1,25 @@
+sequenceDiagram
+    actor Customer
+    participant UI as React Voice Agent UI
+    participant API as FastAPI Backend
+    participant MEM as Memory & CRM (SQLite)
+    participant RAG as FAISS + MiniLM RAG
+    participant LLM as Docker Ollama (qwen2.5:3b)
+    participant BOOK as Appointment Engine (IST)
+
+    Customer->>UI: Speaks or types message (EN / HI)
+    UI->>UI: Browser SpeechRecognition (or Text Fallback)
+    UI->>API: POST /api/chat (session_id, message, language)
+    API->>MEM: Load session history + persisted facts
+    API->>MEM: Extract entities, analyze sentiment & compute 100-pt score
+    API->>BOOK: Check slot intent / availability / explicit confirmation
+    alt Slot Explicitly Confirmed & Free
+        BOOK->>MEM: Insert Confirmed Appointment (APT-...)
+    end
+    API->>RAG: Semantic top-K search over uploaded & sample docs
+    RAG-->>API: Relevant snippets + source filenames
+    API->>LLM: Grounded prompt + sliding window + RAG + booking state
+    LLM-->>API: Natural sales response
+    API->>MEM: Persist assistant turn & structured call summary
+    API-->>UI: Reply, RAG sources, live Lead Score, Sentiment & Booking
+    UI->>Customer: Browser SpeechSynthesis playback + CRM Intelligence update
