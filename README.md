@@ -3,6 +3,8 @@
 **VoxLead AI** is a full-stack autonomous AI sales voice and chat platform with a containerized local LLM (**Ollama + Qwen 2.5 3B**), local **FAISS RAG**, persistent contextual memory, transparent lead scoring, sentiment analysis, conflict-free **IST** appointment booking, structured AI call summaries, and a real-time **React + TypeScript** SaaS CRM dashboard.
 
 > **Disclaimer:** The pre-loaded company documents and optional demo CRM seed records represent fictional sample business data for **VoxLead Solutions Pvt. Ltd.** created solely for technical demonstration.
+>
+> **Documentation:** [One-Page Project Report (Markdown)](docs/PROJECT_REPORT.md) | [One-Page Project Report (PDF)](docs/PROJECT_REPORT.pdf) | [System Design & Study Guide](systemdesign.md)
 
 ---
 
